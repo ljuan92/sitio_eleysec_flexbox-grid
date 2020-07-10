@@ -1,0 +1,107 @@
+Lo borré porque era mas ordenado el que deje sin imagenes, dejo cargados los codigos HTML y CSS
+
+
+HTML:
+
+<!-- Inicio seccion servicios (con imagenes) -->
+    <!--
+    <section class="servicios">
+      <h4>Servicios</h4>
+
+      <article class="instalacion-programas">
+        <h3>Instalación de programas</h3>
+
+        <div class="iconos-programas">
+          <img class="icono-programa" src="img/firefox-icon.png" alt="">
+
+
+
+          <img class="icono-programa" src="img/chrome.png" alt="">
+
+
+
+          <img class="icono-programa" src="img/opera-icon.png" alt="">
+
+
+
+          <img class="icono-programa" src="img/safari-icon.png" alt="">
+
+
+
+          <img class="icono-programa" src="img/android-icon.png" alt="">
+
+
+
+          <img class="icono-programa" src="img/ios-icon.png" alt="">
+        </div>
+
+
+
+      </article>
+
+
+      <article class="servicio">
+        <h3>Mantenimiento de hardware</h3>
+        <img src="img/MANTENIMIENTO-PC-300x169.jpg" class="img-servicio" alt="">
+      </article>
+
+      <article class="servicio">
+        <h3>Venta de Equipos, nuevos y usados</h3>
+        <img class="img-servicio" src="img/computadora-completa-intel-x2-24-600x299.jpg" alt="">
+      </article>
+
+      <article class="servicio">
+        <h3>Asesoramiento en seguridad</h3>
+        <img class="img-servicio" src="img/index.jpeg" alt="">
+      </article>
+
+
+    </section>
+    -->
+    <!-- Fin seccion servicios (con imagenes) -->
+
+
+
+
+
+
+
+
+
+
+CSS:
+
+
+
+main .servicios {
+  border: 1px solid #000000;
+  padding: 10px;
+}
+
+.instalacion-programas {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+  margin-top: 5px;
+  padding: 10px;
+}
+
+.instalacion-programas h3 {
+  display: block;
+  width: 100%;
+}
+
+.icono-programa {
+  width: 85px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.servicio .img-servicio {
+  margin-top: 10px;
+  width: 100%;
+}
+
+

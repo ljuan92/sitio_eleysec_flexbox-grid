@@ -1,0 +1,309 @@
+/* Estilos generales */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Darker Grotesque Regular", sans-serif;
+}
+
+.header-section {
+  align-self: flex-start;
+  width: 100%;
+  color: #ffffff;
+  background-color: #28A745;
+  border-bottom: 1px solid #000000;
+  padding: 5px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width:800px) {
+  .header-section {
+    text-align: center;
+  }
+}
+
+.container-section {
+  border: 1px solid black;
+}
+
+/* Fin estilos generales */
+@media screen and (min-width:800px) {
+  body {
+    min-height: 100vh;
+    /* Verificar porque falla si no esta */
+  }
+}
+
+/* Inicio header */
+.header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #1e73be;
+  color: #ffffff;
+}
+
+h1 {
+  font-size: 65px;
+}
+
+h1, h2, h3,
+  {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+h4 {
+  font-size: 21px;
+}
+
+header h2 {
+  font-size: 15px;
+}
+
+/* Fin header */
+/* Contenido principal */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  height: 100%;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: #EDEDED;
+
+
+}
+
+/* Inicio de quien soy */
+.sobre-mi {
+  grid-area: sobre-mi;
+}
+
+section .quien-soy {
+  padding: 20px;
+}
+
+@media screen and (min-width:1000px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px 20px;
+    grid-template-areas: "sobre-mi servicios""contacto contacto";
+
+    width: 90%;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+    margin: auto;
+  }
+}
+
+/* Seccion de servicios (solo texto) */
+.servicios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.servicios h4 {
+  align-self: flex-start;
+  width: 100%;
+  color: #ffffff;
+  background-color: #28A745;
+  padding: 5px;
+}
+
+.servicios ul {
+  width: 90%;
+  padding: 5px;
+  margin: 5px auto;
+}
+
+.servicios ul li {
+  margin: 20px auto;
+}
+
+/* Fin de servicios (solo texto) */
+/* Seccion de contacto */
+.contacto {
+  grid-area: contacto;
+}
+
+.contacto .datos {
+  font-size: 15px;
+}
+
+.contacto .contacto-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 10px;
+  min-height: 650px;
+}
+
+.contacto .datos ul {
+  list-style: none;
+  line-height: 3;
+  width: 100%;
+}
+
+.contacto .sep {
+  width: 90%;
+  height: 1px;
+  background-color: black;
+  margin: auto;
+}
+
+/* Formulario */
+.formulario form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 5px;
+}
+
+.formulario form input, textarea, button {
+  width: 100%;
+  margin-top: 5px;
+}
+
+/* Vista tablet */
+@media screen and (min-width:600px) {
+  .contacto .datos {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+/* Vista PC */
+@media screen and (min-width:1000px) {
+  .contacto {
+    grid-area: contacto;
+  }
+
+  .contacto .formulario {
+    width: 80%;
+  }
+
+  .contacto .contacto-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: auto;
+  }
+
+  .formulario form {
+    width: 80%;
+    margin: auto;
+  }
+
+  .contacto .sep {
+    width: 1px;
+    height: 350px;
+    background-color: black;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .contacto .datos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 35%;
+  }
+}
+
+/* Fin de estilos de contacto */
+/* Inicio del footer */
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #1e73be;
+  color: #ffffff;
+  padding: 5px;
+}
+
+footer .text-footer {
+  text-align: center;
+}
+
+.redes-iconos {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.redes-iconos p {
+  text-transform: uppercase;
+  border-bottom: 1px solid black;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.redes-iconos ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+
+.redes-iconos ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* Footer (vista tablet) */
+@media screen and (min-width:800px) {
+  footer {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  footer .text-footer {
+    display: flex;
+    width: 70%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  footer .redes-iconos {
+    order: 0;
+  }
+}
+
+/* Boton whatsapp */
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.float:hover {
+  text-decoration: none;
+  color: #25d366;
+  background-color: #fff;
+}
+
+.my-float {
+  margin-top: 16px;
+}
